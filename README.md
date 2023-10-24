@@ -1,55 +1,65 @@
-# Event Logger: Ferramenta de Depuração de Eventos para Servidores FiveM
+# 🛠 Event Logger: Sua Solução para Depuração de Eventos no FiveM 🛠
 
-O Event Logger é uma ferramenta poderosa destinada a ajudar administradores e desenvolvedores de servidores FiveM a diagnosticar e resolver problemas relacionados a eventos que podem estar causando instabilidade ou quedas no servidor. Especialmente projetado para rastrear eventos do servidor para o cliente (S > C), este script é essencial quando você suspeita que eventos excessivos estão afetando o desempenho do seu servidor.
+---
 
-## Recursos e Funcionalidades
+**Event Logger** é uma ferramenta robusta, desenvolvida com o intuito de auxiliar administradores e desenvolvedores de servidores FiveM a identificar e solucionar problemas associados a eventos que podem estar comprometendo a estabilidade e desempenho do servidor. Este script é focado em eventos que vão do servidor para o cliente (S > C), conhecidos por seu alto custo de processamento e impacto significativo na rede.
 
-- **Depuração de Eventos S > C**: Foca na monitoração de eventos que vão do servidor para o cliente, que são conhecidos por terem um alto custo de rede e CPU, e são os mais propensos a causar problemas de desempenho.
-- **Detecção de Eventos Excessivos**: Ajuda a identificar eventos específicos que podem estar sendo disparados em excesso, permitindo uma ação rápida para resolver o problema.
-- **Logs Detalhados**: Gera logs detalhados que podem ser revisados para identificar os eventos problemáticos.
+## ✨ Destaques e Funcionalidades
 
-## Alertas e Indicações de Problemas
+- **Análise Específica de Eventos S > C**: Monitoramento direcionado para eventos que transitam do servidor para o cliente, identificando potenciais gargalos e excessos.
+- **Identificação Precisa**: Localiza eventos disparados em excesso, proporcionando dados concretos para uma rápida resolução.
+- **Logs Detalhados**: Produz registros minuciosos, essenciais para uma análise aprofundada e identificação de eventos problemáticos.
 
-Quando o servidor começa a apresentar os seguintes sinais, é um indicativo de que o Event Logger pode ser necessário:
+## ⚠ Alertas: Quando Utilizar o Event Logger?
+
+Fique atento aos seguintes sinais no seu servidor, que indicam que o Event Logger pode ser uma ferramenta crucial:
 
 - `Network thread hitch warning`
 - `Sync thread hitch warning`
 
-## Como Usar
+Estas mensagens são sintomas claros de que algo não está certo e uma investigação é necessária.
 
-### 1. Instalação da Dependência
+## 🚀 Como Implementar
 
-Antes de começar a depurar, você precisa instalar as dependências necessárias em todos os recursos do seu servidor.
+### 1️⃣ Instalação e Preparação
+
+Primeiramente, é necessário preparar o terreno instalando as dependências necessárias em todos os recursos do servidor.
 
 ```sh
 /loginstall
 ```
 
-- Execute este comando no terminal do servidor.
-- Isso garantirá que o script do logger funcione adequadamente.
+- **Execute no terminal do servidor**: Este comando configura tudo para você, garantindo que o Logger opere em plena capacidade.
 
-### 2. Remoção da Dependência
+### 2️⃣ Limpeza Pós-Análise
 
-Após concluir a análise e antes de remover o script, as dependências devem ser removidas:
+Após finalizar sua investigação e identificar os culpados, não se esqueça de fazer uma limpeza:
 
 ```sh
 /loguninstall
 ```
 
-- Execute este comando no terminal do servidor.
+- **Terminal do Servidor**: Um comando rápido aqui e você remove todas as dependências, deixando seu servidor limpo e ágil novamente.
 
-### 3. Captura de Logs de Eventos
+### 3️⃣ Capturando e Analisando Logs
 
-Quando você perceber que o servidor está começando a apresentar warnings de `Network` e `Sync thread hitch`, siga estes passos:
+Quando os primeiros sinais de problemas aparecerem, aqui está o que você precisa fazer:
 
-1. Execute o comando `/logevent` no terminal. Isso irá gerar um arquivo .log com os disparos de eventos dos últimos 10 minutos.
-2. Vá até o diretório `server-data` (onde o seu arquivo `server.cfg` está localizado), abra a pasta `logEvent` e abra o documento .log gerado.
-3. Analise o documento para identificar quais eventos podem estar sobrecarregando o servidor.
+1. **Dispare o Comando**: `/logevent` diretamente no terminal.
+   - Isso gerará um arquivo .log com todos os eventos dos últimos 10 minutos.
+2. **Vá até `server-data`**: Dentro, localize a pasta `logEvent` e abra o documento .log que foi gerado.
+3. **Hora da Análise**: Mergulhe nos dados, identifique os eventos que estão pesando mais e tome as medidas necessárias.
 
-## Suporte e Contato
+## 💬 Suporte e Comunidade
 
-Se você precisar de ajuda ou quiser discutir sobre o script, fique à vontade para entrar em contato.
+Precisa de ajuda? Tem perguntas? Junte-se à nossa comunidade e vamos resolver isso juntos!
 
 ---
 
-Se essa ferramenta ajudou a salvar o seu servidor, fico feliz em poder ajudar. Tamo junto! 🤝
+🎉 **Salvamos o Dia?** Se o Event Logger foi a solução que você precisava, estamos aqui para comemorar a vitória com você! 🎉
+
+📣 **Espalhe a Palavra**: Se você achou essa ferramenta útil, compartilhe com outros administradores e desenvolvedores!
+
+🤝 **Estamos Juntos Nessa**: A comunidade FiveM é forte, e com ferramentas como o Event Logger, fica ainda mais forte!
+
+---
