@@ -57,7 +57,8 @@ Os logs serão salvos na pasta `logEvent` dentro de `server-data`.
 
 Para ajudar você a começar a usar o Event Logger e entender todas as suas funcionalidades, confira este tutorial em vídeo:
 
-[![Tutorial Event Logger](https://img.youtube.com/vi/gLH15IbZnIs/0.jpg)](https://youtu.be/gLH15IbZnIs)
+[![Tutorial: Como Usar o Event Logger](https://img.youtube.com/vi/gLH15IbZnIs/0.jpg)](https://www.youtube.com/watch?v=gLH15IbZnIs){:target="_blank"}
+
 
 ## 💬 Suporte e Comunidade
 
