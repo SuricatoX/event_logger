@@ -6,9 +6,10 @@
 
 ## ✨ Destaques e Funcionalidades
 
-- **Análise Específica de Eventos S > C**: Monitoramento direcionado para eventos que transitam do servidor para o cliente, identificando potenciais gargalos e excessos.
-- **Identificação Precisa**: Localiza eventos disparados em excesso, proporcionando dados concretos para uma rápida resolução.
-- **Logs Detalhados**: Produz registros minuciosos, essenciais para uma análise aprofundada e identificação de eventos problemáticos.
+- **Análise Específica de Eventos S > C**: Monitoramento direcionado para eventos que transitam do servidor para o cliente.
+- **Identificação Precisa**: Localiza eventos disparados em excesso, facilitando a resolução rápida.
+- **Logs Detalhados**: Registros minuciosos para análise aprofundada.
+- **Filtragem e Análise de Eventos**: Remova eventos específicos das logs e identifique os que mais pesam no servidor.
 
 ## ⚠ Alertas: Quando Utilizar o Event Logger?
 
@@ -50,13 +51,21 @@ Quando os primeiros sinais de problemas aparecerem, aqui está o que você preci
 2. **Vá até `server-data`**: Dentro, localize a pasta `logEvent` e abra o documento .log que foi gerado.
 3. **Hora da Análise**: Mergulhe nos dados, identifique os eventos que estão pesando mais e tome as medidas necessárias.
 
+Os logs serão salvos na pasta `logEvent` dentro de `server-data`.
+
+## 🎥 Tutorial em Vídeo
+
+Para ajudar você a começar a usar o Event Logger e entender todas as suas funcionalidades, confira este tutorial em vídeo:
+
+[![Tutorial Event Logger](https://img.youtube.com/vi/gLH15IbZnIs/0.jpg)](https://youtu.be/gLH15IbZnIs)
+
 ## 💬 Suporte e Comunidade
 
 Precisa de ajuda? Tem perguntas? Junte-se à nossa comunidade e vamos resolver isso juntos!
 
 ---
 
-🎉 **Salvamos o Dia?** Se o Event Logger foi a solução que você precisava, estamos aqui para comemorar a vitória com você! 🎉
+🎉 **Salvamos o seu servidor?** Se o Event Logger foi a solução que você precisava, estamos aqui para comemorar a vitória com você! 🎉
 
 📣 **Espalhe a Palavra**: Se você achou essa ferramenta útil, compartilhe com outros administradores e desenvolvedores!
 
