@@ -342,7 +342,7 @@ local function transformLogAsStringIntoATable(input)
             if key and value then
                 if key == "BYTES" or key == "SOURCE_TRIGGERED" then
                     value = tonumber(value)
-                elseif key == "DATA-ARGS" then
+                elseif key == "DATA_ARGS" then
                     value = value
                 end
                 currentEntry[key] = value
@@ -391,7 +391,7 @@ local function getBigGlobalEvents(logsTabled)
     local ARGS_LENGHT_LIMIT = 100
 
     for index, logInfo in pairs(logsTabled) do
-        if logInfo.SOURCE_TRIGGERED == -1 and #logInfo['DATA-ARGS'] > ARGS_LENGHT_LIMIT then
+        if logInfo.SOURCE_TRIGGERED == -1 and #logInfo['DATA_ARGS'] > ARGS_LENGHT_LIMIT then
             table.insert(warningEvents, logInfo)
         end
     end
@@ -496,7 +496,7 @@ local function defineWarningEventsAndNotify(logsTabled)
                 end)
                 
                 for _, eventInfo in pairs(eventPack) do
-                    local arguments = eventInfo['DATA-ARGS']
+                    local arguments = eventInfo['DATA_ARGS']
                     if not showFullArguments then
                         arguments = trunkString(arguments)
                     end
@@ -549,7 +549,7 @@ local function defineWarningEventsAndNotify(logsTabled)
                 print('[EVENT_LOGGER] getting arguments ' .. eventPack[1].EVENT_NAME)
 
                 for _, eventInfo in pairs(eventPack) do
-                    local arguments = eventInfo['DATA-ARGS']
+                    local arguments = eventInfo['DATA_ARGS']
 
                     if not showFullArguments then
                         arguments = trunkString(arguments)
@@ -592,7 +592,7 @@ local function defineWarningEventsAndNotify(logsTabled)
                 print('[EVENT_LOGGER] getting arguments ' .. eventPack[1].EVENT_NAME)
 
                 for _, eventInfo in pairs(eventPack) do
-                    local arguments = eventInfo['DATA-ARGS']
+                    local arguments = eventInfo['DATA_ARGS']
 
                     if not showFullArguments then
                         arguments = trunkString(arguments)
